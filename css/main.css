@@ -1,7 +1,22 @@
 html {
-  background: #e6e9e9;
-  background-image:linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
-  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+  }
+
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 body {
@@ -14,12 +29,12 @@ body {
 }
 
 h1, h2, h3 {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     text-transform: uppercase;
     font-weight: normal;
     font-family: 'Oswald', sans-serif;
-    font-weight: 200;
+    font-weight: normal;
     color: #222222;
 }
 
@@ -128,13 +143,12 @@ a:hover {
 
 #search {
     float: right;
-    width: 280px;
-    height: 60px;
-    padding: 20px 0px 0px 0px;
+    width: 50%;
+    padding: 5%;
 }
 
 #search form {
-    height: 41px;
+    height: 45%;
     margin: 0;
     padding: 10px 0 0 20px;
 }
@@ -151,13 +165,12 @@ a:hover {
     border: 1px solid #E7EBED;
     background: #FFFFFF;
     text-transform: lowercase;
-    font: normal 11px Arial, Helvetica, sans-serif;
+    font: normal .95em Arial, Helvetica, sans-serif;
     color: #5D781D;
 }
 
 #search-submit {
-    width: 50px;
-    height: 22px;
+    width: 25%;
     border: none;
     background: #B9B9B9;
     color: #000000;
@@ -167,8 +180,7 @@ a:hover {
 
 #menu {
     float: right;
-    width: 500px;
-    height: 90px;
+    width: 50%;
     margin: 0 auto;
     padding: 0;
 }
@@ -176,7 +188,7 @@ a:hover {
 #menu ul {
     float: right;
     margin: 0;
-    padding: 20px 0px 0px 0px;
+    padding: 7%;
     list-style: none;
     line-height: normal;
 }
