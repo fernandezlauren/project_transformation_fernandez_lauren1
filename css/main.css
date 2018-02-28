@@ -159,8 +159,6 @@ a:hover {
 
 #menu {
     float: right;
-    width: 500px;
-    height: 90px;
     margin: 0 auto;
     padding: 0;
 }
@@ -168,7 +166,6 @@ a:hover {
 #menu ul {
     float: right;
     margin: 0;
-    padding: 20px 0px 0px 0px;
     list-style: none;
     line-height: normal;
 }
