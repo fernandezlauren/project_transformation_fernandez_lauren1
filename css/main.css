@@ -1,40 +1,19 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-  }
-
-  .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
 body {
     margin: 0;
     padding: 0;
     background: #050505 url(../img/img01.jpg) repeat;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 14px;
     color: #5B5B5B;
 }
 
 h1, h2, h3 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
     font-weight: normal;
     font-family: 'Oswald', sans-serif;
-    font-weight: normal;
+    font-weight: 200;
     color: #222222;
 }
 
@@ -55,24 +34,25 @@ p, ul, ol {
     line-height: 180%;
 }
 
+ul, ol {
+}
+
 a {
     color: #5E5E5E;
 }
 
-.group::after {
-    clear: both;
-    display: block;
+a:hover {
 }
 
 #wrapper {
     background: #FFFFFF url(../img/img05.jpg) repeat;
 }
 
-/*.container {
+.container {
     width: 1000px;
     margin: 0px auto;
 }
-*/
+
 /* Header */
 
 #header-wrapper {
@@ -80,25 +60,27 @@ a {
 }
 
 #header {
-    margin: 0px auto;
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 0px 0px;
 }
 
 /* Logo */
 
 #logo {
     float: left;
-    margin: 0px;
-    padding: 30px 0px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
     color: #FFFFFF;
 }
 
 #logo h1, #logo p {
-  margin: 0;
-  padding: 0;
 }
 
 #logo h1 {
-    line-height: 20%;
+    line-height: 120px;
     letter-spacing: -2px;
     font-size: 3.8em;
 }
@@ -108,14 +90,11 @@ a {
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
 }
 
-#logo h1 span {
-  color: #F6B300;
-}
-
 #logo p {
-    margin: 0px;
-    padding: 0px;
-    font: 1.5em Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0px 0 0 0px;
+    letter-spacing: -1px;
+    font: normal 18px Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     color: #8E8E8E;
 }
@@ -134,21 +113,22 @@ a {
 /* Splash */
 
 #splash {
-    width: 100%;
-    height: 20%;
-    margin: 1% auto;
+    width: 960px;
+    height: 300px;
+    margin: 0px auto;
 }
 
 /* Search */
 
 #search {
     float: right;
-    width: 50%;
-    padding: 5%;
+    width: 280px;
+    height: 60px;
+    padding: 20px 0px 0px 0px;
 }
 
 #search form {
-    height: 45%;
+    height: 41px;
     margin: 0;
     padding: 10px 0 0 20px;
 }
@@ -165,12 +145,13 @@ a {
     border: 1px solid #E7EBED;
     background: #FFFFFF;
     text-transform: lowercase;
-    font: normal .95em Arial, Helvetica, sans-serif;
+    font: normal 11px Arial, Helvetica, sans-serif;
     color: #5D781D;
 }
 
 #search-submit {
-    width: 25%;
+    width: 50px;
+    height: 22px;
     border: none;
     background: #B9B9B9;
     color: #000000;
@@ -180,13 +161,16 @@ a {
 
 #menu {
     float: right;
+    width: 500px;
+    height: 90px;
     margin: 0 auto;
     padding: 0;
 }
 
 #menu ul {
+    float: right;
     margin: 0;
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px 0px 0px;
     list-style: none;
     line-height: normal;
 }
@@ -218,32 +202,13 @@ a {
 }
 
 #menu .current_page_item a {
-  background: #1F1F1F;
-  border-radius: 8px;
 }
 
-@media all and (min-width: 600px) {
-    nav li {
-        display: inline-block;
-        width: 50%;
-    }
-}
-
-@media all and (min-width: 850px) {
-    nav li {
-        width: calc(100% / 3);
-    }
-}
-
-@media all and (min-width: 1100px) {
-    nav li {
-        width: calc(100% / 6);
-    }
-}
 /* Page */
 
 #page {
-    margin: 0px auto;
+    width: 1000px;
+    margin: 0 auto;
     padding: 30px 0px;
 }
 
@@ -252,12 +217,10 @@ a {
 #content {
     float: right;
     width: 660px;
-    padding: 60px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .post {
-    padding: 30px 40px;
-    border: 1px;
     overflow: hidden;
     margin-bottom: 40px;
     border-bottom: 1px solid #E7EBED;
@@ -289,6 +252,9 @@ a {
 
 .post .meta .posted {
     float: right;
+}
+
+.post .meta a {
 }
 
 .post .entry {
@@ -324,26 +290,12 @@ a {
     text-decoration: none;
 }
 
-@media (min-width: 950px) {
-    #content {
-        float: right;
-        margin-left: 1.5em;
-        width: calc(100% / 3 * 2);
-    }
-
-    #sidebar {
-        float: left;
-        width: calc(100% / 3 - 1.5em);
-    }
-}
-
-
 /* Sidebar */
 
 #sidebar {
     float: left;
     width: 270px;
-    margin: 10px;
+    margin: 0px;
     padding: 30px 0px 0px 0px;
 }
 
@@ -379,7 +331,7 @@ a {
 }
 
 #sidebar li li a {
-    padding: 5px 0px 0px 20px;
+    padding: 0px 0px 0px 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
 
@@ -392,8 +344,8 @@ a {
 }
 
 #sidebar p {
-    margin: 10px 0px;
-    padding: 30px 30px 20px 30px;
+    margin: 0 0px;
+    padding: 0px 30px 20px 30px;
     text-align: justify;
 }
 
