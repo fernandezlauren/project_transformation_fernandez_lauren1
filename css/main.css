@@ -80,9 +80,6 @@ a:hover {
     color: #FFFFFF;
 }
 
-#logo h1, #logo p {
-}
-
 #logo h1 {
     line-height: 120px;
     letter-spacing: -2px;
@@ -154,7 +151,23 @@ a:hover {
     color: #FFFFFF;
 }
 
-#menu .current_page_item a {
+@media all and (min-width: 600px) {
+    nav li {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 850px) {
+    nav li {
+        width: calc(100% / 3);
+    }
+}
+
+@media all and (min-width: 1000px) {
+    nav li {
+        width: calc(100% / 5);
+    }
 }
 
 /* Page */
@@ -240,6 +253,7 @@ a:hover {
     text-align: center;
     text-decoration: none;
 }
+
 
 /* Sidebar */
 
