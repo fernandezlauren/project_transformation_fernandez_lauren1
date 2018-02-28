@@ -17,7 +17,6 @@ body {
     padding: 0;
     background: #050505 url(../img/img01.jpg) repeat;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
     color: #5B5B5B;
 }
 
@@ -45,10 +44,6 @@ h3 {
 
 p, ul, ol {
     margin-top: 0;
-    line-height: 180%;
-}
-
-ul, ol {
 }
 
 a {
@@ -74,14 +69,12 @@ a:hover {
 
 #header {
     margin: 0 auto;
-    padding: 0px 0px;
+    padding: 0 0;
 }
 
 /* Logo */
 
 #logo {
-    float: left;
-    width: 300px;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
@@ -103,9 +96,8 @@ a:hover {
 
 #logo p {
     margin: 0;
-    padding: 0px 0 0 0px;
-    letter-spacing: -1px;
-    font: normal 18px Georgia, "Times New Roman", Times, serif;
+    padding: 0 0 0 0;
+    font: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     color: #8E8E8E;
 }
