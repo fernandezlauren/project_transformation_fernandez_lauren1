@@ -254,8 +254,8 @@ a:hover {
     float: right;
 }
 
-.post .meta a {
-}
+/*.post .meta a {
+}*/
 
 .post .entry {
     padding: 0px 0px 40px 0px;
@@ -356,11 +356,7 @@ a:hover {
 #sidebar a:hover {
     text-decoration: underline;
 }
-
-/* Calendar */
-
-#calendar {
-}
+/*
 
 #calendar_wrap {
     padding: 20px;
@@ -377,7 +373,7 @@ a:hover {
 #calendar #next {
     text-align: right;
 }
-
+/*
 /* Three Column Footer Content */
 
 #footer-content {
@@ -422,8 +418,8 @@ a:hover {
     width: 300px;
 }
 
-#footer-content a {
-}
+/*#footer-content a {
+}*/
 
 #column1 {
     float: left;
@@ -507,8 +503,8 @@ a:hover {
     background: url(../img/img03.png) no-repeat left bottom;
 }
 
-#banner .content {
-}
+/*#banner .content {
+}*/
 
 
 .list-style1 {
